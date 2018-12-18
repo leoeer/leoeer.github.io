@@ -54,7 +54,7 @@ logistics field, so if your warehouse is in need of a great all-around dude who 
 or your trucks need a responsible driver, I'm your guy. I'm also interested in all jobs that involve LT skills, so if your company is in need of someone eager to learn and develop themself, hit me up. If you need someone who can tackle new 
 challenges and work in an international environment, look no further!  
   
-You can take a look at my resumé [here][CV]
+You can take a look at my resumé [here][CV].
 
 ## Projects
 
