@@ -19,7 +19,7 @@ me better from the links I've listed below!
 
 ## Find out more about me on:
 
-* [LinkedIn](www.linkedin.com/in/leoeerolainen)
+* [LinkedIn](https://www.linkedin.com/in/leoeerolainen/)
 
 * [GitHub][git]
 
@@ -28,7 +28,9 @@ me better from the links I've listed below!
 ## Contact me:
 
 You can contact me via my university email address, which is in the form of 
-first_name.last_name@helsinki.fi. 
+first_name.last_name@helsinki.fi.  
+  
+Also feel free to send me a PM on my social media accounts.
 
 ## Courses I have taken at HY:
 
@@ -49,18 +51,24 @@ fall 2018
 
 I'm always open for new jobs and opportunities. I have lots of experience from working in the 
 logistics field, so if your warehouse is in need of a great all-around dude who gets the job done 
-or your trucks need a responsible driver, I'm your guy. If you need someone who can tackle new 
+or your trucks need a responsible driver, I'm your guy. I'm also interested in all jobs that involve LT skills, so if your company is in need of someone eager to learn and develop themself, hit me up. If you need someone who can tackle new 
 challenges and work in an international environment, look no further!  
   
-You can take a look at my resumé [here] 
+You can take a look at my resumé [here][CV]
 
 ## Projects
 
 I'm currently working on this website project for a Command-Line Course GitHub Pages. Take a look 
-at it on [GitHub][git]
+at it on [GitHub][git]. I also have an entire section dedicated to this cmdline-course on top of this page. 
+  
+> The project is about creating a website for myself and practising the use of git and GitHub Pages.
 
-## Misc. 
+## About my hobbies (Misc.) 
 
-[This is what I'm _really_ looking forward to](http://www.luontoon.fi/karhunkierros) 
+[This](http://www.luontoon.fi/karhunkierros) is what I'm _really_ looking forward to  
+  
+[One](https://www.tervarumpu.fi/fi/repovesi/patikointijareitit/kaakkurinkierros) of the camping trips I made last summer
+
 
 [git]: https://github.com/leoeer
+[CV]: {{ leoeer.github.io }}/assets/documents/CV.pdf
