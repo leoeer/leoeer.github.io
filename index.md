@@ -2,26 +2,65 @@
 layout: default
 ---
 
-## Introduction
+## Who?
 
-Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Good day to you mate! My name is Leo Eerolainen, and I'm a 21 year old linguistics student at 
+the University of Helsinki. In my studies I'm focusing on language technology, and I'm generally interested in 
+communications and informational technology. Currently I am half way through my first year of 
+studies at the university. I live in Eastern Helsinki, and plan to stay in the area for a long 
+time.  
+  
+On my spare time I really enjoy camping and hiking, and love being in the nature. Besides that, I 
+have always enjoyed working 
+on cars, bikes etc. During my military service I served as a truck driver in Guard Jaeger 
+Regiment. I'm always up for trying new things and want to collect a broad collection of 
+experiences in my life. You could say that I'm a jack of all trades in a way. You can get to know 
+me better from the links I've listed below!  
 
-## Find me on
+## Find out more about me on:
 
-[LinkedIn](https://fi.linkedin.com/mouse-mousekewitz), [GitHub](https://github.com/mokewitz)
+* [LinkedIn](www.linkedin.com/in/leoeerolainen)
 
-## Contact
+* [GitHub][git]
 
-My email address is of the form first_name.last_name@helsinki.fi. 
+* [Instagram](https://www.instagram.com/eerolex/)
 
-## Courses I've Taken
+## Contact me:
 
-[Enjoying Cheese I](https://courses.helsinki.fi/enjoying-cheese-I), fall 2018
+You can contact me via my university email address, which is in the form of 
+first_name.last_name@helsinki.fi. 
 
-[Feline Avoidance](https://courses.helsinki.fi/feline-avoidance), fall 2018
+## Courses I have taken at HY:
+
+[Introduction to Language Technology](https://courses.helsinki.fi/fi/kik-405/124787882), fall 
+2018
+
+[Command-Line Course](https://courses.helsinki.fi/fi/kik-lg218/126710126), fall 2018
+
+[Yleisen kielitieteen ja fonetiikan 
+johdantokurssi](https://courses.helsinki.fi/fi/kik-401/124787881), fall 2018
+
+[Fonetiikka ja fonologia](https://courses.helsinki.fi/fi/kik-lg101/124793728), fall 2018
+
+[Johdatusta yleiseen kirjallisuustieteeseen](https://courses.helsinki.fi/fi/ttk-yl110/124896865), 
+fall 2018
+
+## Need a trustworthy and loyal employee? 
+
+I'm always open for new jobs and opportunities. I have lots of experience from working in the 
+logistics field, so if your warehouse is in need of a great all-around dude who gets the job done 
+or your trucks need a responsible driver, I'm your guy. If you need someone who can tackle new 
+challenges and work in an international environment, look no further!  
+  
+You can take a look at my resumé [here] 
 
 ## Projects
 
+I'm currently working on this website project for a Command-Line Course GitHub Pages. Take a look 
+at it on [GitHub][git]
+
 ## Misc. 
 
-[Gotta Love Cheese](https://en.wikipedia.org/wiki/Cheese) 
+[This is what I'm _really_ looking forward to](http://www.luontoon.fi/karhunkierros) 
+
+[git]: https://github.com/leoeer
