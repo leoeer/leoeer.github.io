@@ -4,13 +4,13 @@ layout: default
 
 ## Who?
 
-Good day to you mate! My name is Leo Eerolainen, and I'm a 21 year old linguistics student at 
+Good day to you mate! My name is Leo Eerolainen, and I'm a 21-year-old linguistics student at 
 the University of Helsinki. In my studies I'm focusing on language technology, and I'm generally interested in 
 communications and informational technology. Currently I am half way through my first year of 
 studies at the university. I live in Eastern Helsinki, and plan to stay in the area for a long 
 time.  
   
-On my spare time I really enjoy camping and hiking, and love being in the nature. Besides that, I 
+In my spare time I really enjoy camping and hiking, and love being in nature. Besides that, I 
 have always enjoyed working 
 on cars, bikes etc. During my military service I served as a truck driver in Guard Jaeger 
 Regiment. I'm always up for trying new things and want to collect a broad collection of 
