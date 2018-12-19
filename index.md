@@ -51,15 +51,14 @@ fall 2018
 
 I'm always open for new jobs and opportunities. I have lots of experience from working in the 
 logistics field, so if your warehouse is in need of a great all-around dude who gets the job done 
-or your trucks need a responsible driver, I'm your guy. I'm also interested in all jobs that involve LT skills, so if your company is in need of someone eager to learn and develop themself, hit me up. If you need someone who can tackle new 
+or your trucks need a responsible driver, I'm your guy. I'm also interested in all jobs that involve LT skills, so if your company is in need of someone eager to learn and develop himself, hit me up. If you need someone who can tackle new 
 challenges and work in an international environment, look no further!  
   
 You can take a look at my resumé [here][CV].
 
 ## Projects
 
-I'm currently working on this website project for a Command-Line Course GitHub Pages. Take a look 
-at it on [GitHub][git]. I also have an entire section dedicated to this cmdline-course on top of this page. 
+I'm currently working on this website project for a Command-Line Course on GitHub Pages. Check it out on [GitHub](https://github.com/leoeer/leoeer.github.io). I also have an entire section dedicated to this cmdline-course on top of this page. 
   
 > The project is about creating a website for myself and practising the use of git and GitHub Pages.
 

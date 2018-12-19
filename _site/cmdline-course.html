@@ -63,21 +63,19 @@ Here are some of the topics we have learned about during the course:</p>
 
 <h3 id="week-1-introduction-to-command-line-environments">Week 1: Introduction to Command-Line Environments</h3>
 
-<p>During the first week, we started with the very basics. We learned what text editors can be used for, and how text files and binary files differ. We were introduced to basic UNIX commands like <strong>cat, less, ls, nano, touch, man, mv, cp, wget</strong> and many more. File types were also discussed and we learned e.g. that not all files have a file extension in the Linux system. We also had our first touch with modifying a <a href="https://www.gutenberg.org/"><em>Project Gutenberg</em></a> book using the <strong>nano</strong> text editor.</p>
+<p>During the first week, we started with the very basics. We learned what text editors can be used for, and how text files and binary files differ. We were introduced to basic UNIX commands like <code class="highlighter-rouge">cat, less, ls, nano, touch, man, mv, cp, wget</code> and many more. File types were also discussed and we learned e.g. that not all files have a file extension in the Linux system. We also had our first touch with modifying a <a href="https://www.gutenberg.org/"><em>Project Gutenberg</em></a> book using the <code class="highlighter-rouge">nano</code> text editor.</p>
 
 <p>In my opinion the first week wasn’t difficult at all, possibly because I had already gotten a peek at the UNIX world on a previous course. Although I think that this week was really useful and crucial to learning the more advanced things later down the road. I can imagine someone who has never done anything command-line related finding this week particularly useful (and even a little scary maybe). Overall I think Week 1 was a very good introduction to the topic and to the course, with the support of the first lecture where we got a great presentation which explained how computers work in general.</p>
 
 <p>I will be giving an example of some code correlating to the subject of each week. For example, during Week 1 we learned that the following command can be used to create a new file:</p>
 
-<blockquote>
-  <p>touch FILENAME</p>
-</blockquote>
+<p><code class="highlighter-rouge">touch FILENAME</code></p>
 
 <h3 id="week-2-navigating-a-unix-system">Week 2: Navigating a UNIX system</h3>
 
-<p>The second week was about learning how different file permissions effect their usage. We also got to extend our understanding about the structure of the UNIX file system and the working principles behind it. <strong>Sudo</strong> command was introduced, and we got to know what it means to do commit changes as the root user. It was demonstrated to us that for example the commands we used in Week 1 (<strong>ls, cp, nano</strong> etc.) are in fact programs working our system, and by using the commands we have learned we actually just tell these programs what to do. We also learned how to change the permissions of files and directories and how to determine who gets to view, edit and execute them. In addition to these subjects, we studied and learned how symbolic links can be created and how they behave.</p>
+<p>The second week was about learning how different file permissions effect their usage. We also got to extend our understanding about the structure of the UNIX file system and the working principles behind it. <code class="highlighter-rouge">sudo</code> command was introduced, and we got to know what it means to do commit changes as the root user. It was demonstrated to us that for example the commands we used in Week 1 (<code class="highlighter-rouge">ls, cp, nano</code> etc.) are in fact programs working our system, and by using the commands we have learned we actually just tell these programs what to do. We also learned how to change the permissions of files and directories and how to determine who gets to view, edit and execute them. In addition to these subjects, we studied and learned how symbolic links can be created and how they behave.</p>
 
-<p>The most useful command I learned how to use this week was deifinitely <strong>chmod</strong>. <strong>chmod</strong> is used to change the mode of a file with options and permissions. Since permissions are divided into three categories based on:</p>
+<p>The most useful command I learned how to use this week was deifinitely <code class="highlighter-rouge">chmod</code>. <code class="highlighter-rouge">chmod</code> is used to change the mode of a file with options and permissions. Since permissions are divided into three categories based on:</p>
 
 <ol>
   <li>What the user of the file is allowed to do</li>
@@ -85,16 +83,16 @@ Here are some of the topics we have learned about during the course:</p>
   <li>What all others are allowed to do</li>
 </ol>
 
-<p>These are defined using the options 1 = <em>u</em>, 2 = <em>g</em> and 3 = <em>o</em>. <em>a</em> can be used if we want to give all these groups the same rights. Read, write and execute rights are referred to with the letters <strong>r, w and x</strong>. The following command would give read rights to everyone.</p>
+<p>These are defined using the options 1 = <em>u</em>, 2 = <em>g</em> and 3 = <em>o</em>. <em>a</em> can be used if we want to give all these groups the same rights. Read, write and execute rights are referred to with the letters <code class="highlighter-rouge">r, w</code> and <code class="highlighter-rouge">x</code>. The following command would give read rights to everyone.</p>
 <blockquote>
-  <p><strong>chmod u=r, g=r, o=r myfile</strong><br />
+  <p><code class="highlighter-rouge">chmod u=r, g=r, o=r myfile</code><br />
 or<br />
-<strong>chmod a=r myfile</strong></p>
+<code class="highlighter-rouge">chmod a=r myfile</code></p>
 </blockquote>
 
-<p>If we want to make no changes to previous rights and only add a read permission for example, we can use <em>a+r</em> instead of <em>a=r</em>.</p>
+<p>If we want to make no changes to previous rights and only add a read permission for example, we can use <code class="highlighter-rouge">a+r</code> instead of <code class="highlighter-rouge">a=r</code>.</p>
 
-<p><strong>chmod</strong> can also be used with octal values (e.g. <strong>chmod 777 myfile</strong>). Each number gives permissions to <em>u, g and o.</em> These numbers are calculated using the values given to each permission:</p>
+<p><code class="highlighter-rouge">chmod</code> can also be used with octal values (e.g. <code class="highlighter-rouge">chmod 777 myfile</code>). Each number gives permissions to <em>u, g and o.</em> These numbers are calculated using the values given to each permission:</p>
 
 <table>
   <thead>
@@ -152,65 +150,55 @@ or<br />
 
 <h3 id="week-3-corpus-processing">Week 3: Corpus Processing</h3>
 
-<p>In the beginning of Week 3 we learned to pipe standard output and commands. Piping basically means taking the result of the first command and forwarding the result to the next command. This opened a world of new possibilites to us, since we were no longer prisoners of using single commands like <strong>less</strong> on the command line. Now we could for instance use the command <strong>echo</strong> and pipe the result in to <strong>less</strong>, which gave us freedom to try all sorts of commands without cluttering the command line, which can happen very easily in text processing.</p>
+<p>In the beginning of Week 3 we learned to pipe standard output and commands. Piping basically means taking the result of the first command and forwarding the result to the next command. This opened a world of new possibilites to us, since we were no longer prisoners of using single commands like <code class="highlighter-rouge">less</code> on the command line. Now we could for instance use the command <code class="highlighter-rouge">echo</code> and pipe the result in to <code class="highlighter-rouge">less</code>, which gave us freedom to try all sorts of commands without cluttering the command line, which can happen very easily in text processing.</p>
 
-<p>In week 3 we got a taste of actual <a href="https://en.wikipedia.org/wiki/Natural_language_processing">NLP</a>. We started by using the command <strong>grep</strong> to search for words in texts and using <strong>tr</strong> and <strong>sed</strong> to replace words in text. And not just words, we also learned how to convert large text files (such as the <a href="http://www.gutenberg.org/ebooks/4511">Life of Bee book</a> in to sentence-per-line format to make text processing easier. We also learned how to generate frequency lists to see the most frequent words in a text file. I thought this was a very cool and useful thing.</p>
+<p>In week 3 we got a taste of actual <a href="https://en.wikipedia.org/wiki/Natural_language_processing">NLP</a>. We started by using the command <code class="highlighter-rouge">grep</code> to search for words in texts and using <code class="highlighter-rouge">tr</code> and <code class="highlighter-rouge">sed</code> to replace words in text. And not just words, we also learned how to convert large text files (such as the <a href="http://www.gutenberg.org/ebooks/4511">Life of Bee book</a> in to sentence-per-line format to make text processing easier. We also learned how to generate frequency lists to see the most frequent words in a text file. I thought this was a very cool and useful thing.</p>
 
-<p>Week 3 was probably the most frustrating one for me, since I had some trouble with regular expressions. I did learn how to use them for searching things in corpora, but it was always a pain to see that my answers were not correct in the week’s Quiz. For instance, I used the following regular expression to search for instances of the word “queen” in the <a href="http://www.gutenberg.org/ebooks/4511">Life of Bee book</a> (<strong>wc -l</strong> is used for counting the number of matching lines):</p>
-<blockquote>
-  <p>grep -Eo “(\bqueen\b[^\w-])” life_of_bee.sent | wc -l<br />
-136</p>
-</blockquote>
+<p>Week 3 was probably the most frustrating one for me, since I had some trouble with regular expressions. I did learn how to use them for searching things in corpora, but it was always a pain to see that my answers were not correct in the week’s Quiz. For instance, I used the following regular expression to search for instances of the word “queen” in the <a href="http://www.gutenberg.org/ebooks/4511">Life of Bee book</a> (<code class="highlighter-rouge">wc -l</code> is used for counting the number of matching lines):</p>
 
-<p>The <strong><em>”(\bqueen\b[^\w-])”</em></strong> regex is formed so that <strong>\b</strong> are used as word boundaries to express that we want to find words only in this form, and not for example “queens”. <strong>[^\w]</strong> is used to exclude the hyphen (-), so that words like queen-bee are left out. Regex is very sensitive to mistakes, and that’s why it can be frustrating from time to time.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; grep -Eo "(\bqueen\b[^\w-])" life_of_bee.sent | wc -l  
+&gt; 136  
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">"(\bqueen\b[^\w-])"</code> regex is formed so that <code class="highlighter-rouge">\b</code> are used as word boundaries to express that we want to find words only in this form, and not for example “queens”. <code class="highlighter-rouge">[^\w]</code> is used to exclude the hyphen (-), so that words like queen-bee are left out. Regex is very sensitive to mistakes, and that’s why it can be frustrating from time to time.</p>
 
 <h3 id="week-4-scripting-and-unix-configuration-files">Week 4: Scripting and UNIX Configuration Files</h3>
 
 <p>During Week 4 we learned what UNIX environment variables are and how customizing them is sometimes necessary to make bash run things correctly. For me, this meant that for starters I had to learn how to make my bash start the newest version of <strong>nano</strong> instead of the original old version, which was unable to work some of the exercises we made. After this, we got to customize our own <strong>.bashrc</strong> configuration files, which give us the freedom to personalize our terminal view. Finally we got into writing scripts. Scripts are basically automated sets of commands written into files. They make working on the command like whole lot easier, and actually, they are a vital part for computers to work.</p>
 
-<p>For me the best thing in this week was the time when I finally figured out how to use <strong>if</strong> variables in a script. I created a script, which converts a text file into sentence-per-line format and if the process is succesfull, it lets the user know. I also included an error message and made it so that the script doesn’t output any progress messages which are not relevant to the user. It looks like this:</p>
+<p>For me the best thing in this week was the time when I finally figured out how to use <code class="highlighter-rouge">if</code> variables in a script. I created a script, which converts a text file into sentence-per-line format and if the process is succesfull, it lets the user know. I also included an error message and made it so that the script doesn’t output any progress messages which are not relevant to the user. It looks like this:</p>
 <blockquote>
   <p><a href="/assets/documents/myscript.txt">#! /bin/bash # script: myscript.sh…</a></p>
 </blockquote>
 
 <h3 id="week-5-installing-and-running-programs">Week 5: Installing and Running Programs</h3>
 
-<p>In my honest opinion, I didn’t really enjoy Week 5. We learned how different libraries are installed (Java, Python, C) and how to code is compiled. We got familiar with <strong>make</strong> and <em>Makefile</em> which are used to build other programs, libraries and projects. I had some trouble understanding the use of <em>Makefile</em> variables. (If you think you are good at explaining them, please send me a message through my <a href="/index.html">contact channels</a>!)</p>
+<p>In my honest opinion, I didn’t really enjoy Week 5. We learned how different libraries are installed (Java, Python, C) and how to code is compiled. We got familiar with `make and <em>Makefile</em> which are used to build other programs, libraries and projects. I had some trouble understanding the use of <em>Makefile</em> variables. (If you think you are good at explaining them, please send me a message through my <a href="/index.html">contact channels</a>!)</p>
 
 <p>For Week 5 we did get to install and use some Python modules, which I thought were very useful. We used Bllipparser to parse text, and used the <em>guess_language</em> module to guess some unknown languages which I thought was fun. Here’s an example of an exercise we did using the <em>guess_language</em> module:</p>
-<blockquote>
-  <p>$ python3
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;$ python3
 Python 3.7.1 (default, Nov  6 2018, 18:45:35) 
 [Clang 10.0.0 (clang-1000.11.45.5)] on darwin
-Type “help”, “copyright”, “credits” or “license” for more information.</p>
-  <blockquote>
-    <blockquote>
-      <p>from guess_language import guess_language</p>
-    </blockquote>
-  </blockquote>
-</blockquote>
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; from guess_language import guess_language
 
-<blockquote>
-  <blockquote>
-    <blockquote>
-      <p>guess_language(“This is an English sentence if I ever saw one.”)<br />
-‘en’</p>
-    </blockquote>
-  </blockquote>
-</blockquote>
+&gt;&gt;&gt; guess_language("This is an English sentence if I ever saw one.")  
+'en'  
+</code></pre></div></div>
 
 <h3 id="week-6-version-control">Week 6: Version Control</h3>
 
 <p><em>git</em>. Week 6 introduced <em>git</em> to us. It’s a version controlling “environment” one could say. <em>git</em> allows you to make a repository of your project (directory) to your GitHub account, where you can share it with others and lots of other cool stuff. <em>git</em> works as sort of a backup to your project, where you can make sure that the parts of your project which already function are not afflicted by new changes you make to your project. This is a huge help in big projects and in coding in general, where even a small typo can ruin a lot of things. You can make sure that your project stays functional while you’re developing new features to it, and if you f*** things up, you can always return to your previous version.</p>
 
 <p>I really found <em>git</em> useful, and can’t wait to learn how to do more complicated things with it. Here’s an example of my latest <em>git</em> push (pushing means pushing changes made in my local repository to my GitHub repository) as I’m writing this project:</p>
-<blockquote>
-  <p>[leo@~/Documents/HY/cmdline_course/final/leoeer.github.io]==&gt;: git log<br />
-commit b986f341c6d3a3ab92850abd0de08exxxxxxxxxx (HEAD -&gt; cmdline-course, origin/cmdline-course)<br />
-Author: Leo Eerolainen lxx.exxxxxxxx@hxxxxxxx.fx<br />
-Date:   Wed Dec 19 13:21:49 2018 +0200<br />
-backup push after week3</p>
-</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;[leo@~/Documents/HY/cmdline_course/final/leoeer.github.io]==&gt;: git log  
+&gt;commit b986f341c6d3a3ab92850abd0de08exxxxxxxxxx (HEAD -&gt; cmdline-course, origin/cmdline-course)  
+&gt;Author: Leo Eerolainen lxx.exxxxxxxx@hxxxxxxx.fx  
+&gt;Date:   Wed Dec 19 13:21:49 2018 +0200  
+&gt;backup push after week3
+</code></pre></div></div>
 
 <p>The log is longer in reality, but here I demonstrate that you can see recent activity between repositories and track changes.</p>
 
@@ -223,11 +211,27 @@ backup push after week3</p>
 <p><img src="/assets/img/jekyll.png" alt=" " /></p>
 
 <p>And using the command</p>
-<blockquote>
-  <p>bundle exec jekyll serve</p>
-</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve  
+</code></pre></div></div>
 
 <p>Jekyll builds the webpage and creates a local address for it, from which it can be previewed from before pushing changes to GitHub Pages.</p>
+
+<p>Here you can see what’s happening in my terminal when Jekyll is running. Jekyll can be left running in the background and it keeps track of changes to the files in the repository and makes updates real-time.</p>
+
+<blockquote>
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Source: /Users/leo/Documents/HY/cmdline_course/final/leoeer.github.io
+   Destination: /Users/leo/Documents/HY/cmdline_course/final/leoeer.github.io/_site  Incremental build: disabled. Enable with --incremental
+  Generating... 
+                done in 0.202 seconds.  Auto-regeneration: enabled for '/Users/leo/Documents/HY/cmdline_course/final/leoeer.github.io'
+Server address: http://127.0.0.1:4000   Server running... press ctrl-c to stop.
+  Regenerating: 1 file(s) changed at 2018-12-19 16:05:31
+                cmdline-course.md
+                ...done in 0.105715 seconds.
+</code></pre></div>  </div>
+</blockquote>
+
+<p><a href="/heh.html">secret link</a></p>
 
 
 
