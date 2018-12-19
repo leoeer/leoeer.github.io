@@ -101,7 +101,7 @@ For me the best thing in this week was the time when I finally figured out how t
 
 ### Week 5: Installing and Running Programs  
   
-In my honest opinion, I didn't really enjoy Week 5. We learned how different libraries are installed (Java, Python, C) and how to code is compiled. We got familiar with `make and _Makefile_ which are used to build other programs, libraries and projects. I had some trouble understanding the use of _Makefile_ variables. (If you think you are good at explaining them, please send me a message through my [contact channels](/index.html)!)
+In my honest opinion, I didn't really enjoy Week 5. We learned how different libraries are installed (Java, Python, C) and how to code is compiled. We got familiar with `make` and _Makefile_ which are used to build other programs, libraries and projects. I had some trouble understanding the use of _Makefile_ variables. (If you think you are good at explaining them, please send me a message through my [contact channels](/index.html)!)
   
 For Week 5 we did get to install and use some Python modules, which I thought were very useful. We used Bllipparser to parse text, and used the _guess_language_ module to guess some unknown languages which I thought was fun. Here's an example of an exercise we did using the _guess_language_ module:  
 
@@ -134,7 +134,7 @@ I really found _git_ useful, and can't wait to learn how to do more complicated 
 ```    
   
 The log is longer in reality, but here I demonstrate that you can see recent activity between repositories and track changes.  
-  
+
   
 
 
