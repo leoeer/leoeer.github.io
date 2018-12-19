@@ -1,0 +1,54 @@
+#! /bin/bash
+
+# script: myscript.sh
+# author: Leo Eerolainen (Nov 2018)
+#
+# This script takes the input file $1 and converts it
+# to a sentence-per-line output file $2. The script print a confirmation
+# message if the process is succesful. It also prints an error message
+# if the script is run without the correct number of arguments.
+
+# Here are the actual commands performed to the input file. Note that
+# in some cases the stderr is redirected to /dev/null to keep the error
+# message clean.
+
+dos2unix "$1" &>/dev/null |
+sed 's/^$/#/' "$1" 2>/dev/null |
+tr '\n' ' ' |
+sed -E 's/([:punct:]) ([A-Z])/\1# \2/g' |
+sed -E 's/([IVX] [.])#/\1/g' |
+tr '#' '\n' |
+sed 's/^ *//' |
+sed 's/ *$//' |
+grep -v "^$" 2>/dev/null > "$2"
+
+# Here begins the part where the script prints out the result of the
+# process.
+
+if [ $? -eq 0 ]
+then
+ echo "File succesfully converted to one sentence per line format. Have
+fun processing!"
+ exit 0
+else
+ echo "Something went wrong. Please check that you entered the correct
+amount of command-line variables."
+ echo "Usage: $0 inputfile outputfile"
+ echo "For more information, consult someone who is an expert in corpus
+processing."
+ exit 1
+fi
+
+# And here the script checks that the user has given the correct amount
+# command-line arguments.
+
+if [ $# -ne 2 ]
+then
+  echo "Something went wrong. Please check that you entered the correct
+amount of command-line variables."
+ echo "Usage: $0 inputfile outputfile"
+ echo "For more information, consult someone who is an expert in corpus
+processing."
+ exit 1
+fi
+
